@@ -1,0 +1,27 @@
+{
+  "workbench.colorTheme": "Andromeda Colorizer",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "redhat.telemetry.enabled": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": [],
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "terminal.integrated.shellIntegration.history": 1000,
+  "turboConsoleLog.addSemicolonInTheEnd": true,
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.associations": {
+    "*.hujson": "jsonc"
+},
+"json.schemas": [
+
+{
+    "fileMatch": ["*.hujson"],
+    "schema": {
+        "allowTrailingCommas": true
+    }
+}]
+}
