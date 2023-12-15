@@ -1,6 +1,8 @@
 {
   "workbench.colorTheme": "Andromeda Colorizer",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.languageDetection": true,
   "redhat.telemetry.enabled": false,
   "[python]": {
     "editor.formatOnType": true
@@ -14,19 +16,39 @@
   "files.trimTrailingWhitespace": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "files.associations": {
-    "*.hujson": "jsonc"
-},
-"json.schemas": [{
-    "fileMatch": ["*.hujson"],
-    "schema": {
+    "*.hujson": "jsonc",
+    "terragrunt.hcl": "terraform",
+    "*.tfvars": "terraform",
+    "*.tf": "terraform",
+    "*.tf.override": "terraform",
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["*.hujson"],
+      "schema": {
         "allowTrailingCommas": true
+      }
     }
-}
-],
-"python.linting.flake8Enabled": true,
-"python.linting.flake8Args": [
-  "flake8Enabled"
-],
-"editor.wordWrap": "wordWrapColumn",
-"interactiveSession.editor.wordWrap": "on"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["flake8Enabled"],
+  "editor.wordWrap": "wordWrapColumn",
+  "interactiveSession.editor.wordWrap": "on",
+  "snyk.advanced.cliPath": "/Users/adam/Library/Application Support/snyk-ls/snyk-macos",
+  "WhiteSource Advise.includeDevDependencies": true,
+  "WhiteSource Advise.Diff.BaseBranch": "main",
+  "snyk.yesWelcomeNotification": false,
+  "terraform.codelens.referenceCount": true,
+  "git.confirmSync": false
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "terraform.languageServer.enable": true,
 }
