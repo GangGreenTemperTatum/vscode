@@ -51,4 +51,7 @@
     "editor.formatOnSaveMode": "file"
   },
   "terraform.languageServer.enable": true,
+  "github.copilot.chat.welcomeMessage": "always",
+  "github.copilot-labs.showBrushesLenses": true,
+  "github.copilot-labs.showTestGenerationLenses": true
 }
